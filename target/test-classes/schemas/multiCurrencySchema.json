@@ -1,0 +1,1913 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"default": {},
+	"title": "Root Schema",
+	"required": [
+		"result",
+		"provider",
+		"documentation",
+		"terms_of_use",
+		"time_last_update_unix",
+		"time_last_update_utc",
+		"time_next_update_unix",
+		"time_next_update_utc",
+		"time_eol_unix",
+		"base_code",
+		"rates"
+	],
+	"properties": {
+		"result": {
+			"type": "string",
+			"default": "",
+			"title": "The result Schema",
+			"examples": [
+				"success"
+			]
+		},
+		"provider": {
+			"type": "string",
+			"default": "",
+			"title": "The provider Schema",
+			"examples": [
+				"https://www.exchangerate-api.com"
+			]
+		},
+		"documentation": {
+			"type": "string",
+			"default": "",
+			"title": "The documentation Schema",
+			"examples": [
+				"https://www.exchangerate-api.com/docs/free"
+			]
+		},
+		"terms_of_use": {
+			"type": "string",
+			"default": "",
+			"title": "The terms_of_use Schema",
+			"examples": [
+				"https://www.exchangerate-api.com/terms"
+			]
+		},
+		"time_last_update_unix": {
+			"type": "integer",
+			"default": 0,
+			"title": "The time_last_update_unix Schema",
+			"examples": [
+				1712793751
+			]
+		},
+		"time_last_update_utc": {
+			"type": "string",
+			"default": "",
+			"title": "The time_last_update_utc Schema",
+			"examples": [
+				"Thu, 11 Apr 2024 00:02:31 +0000"
+			]
+		},
+		"time_next_update_unix": {
+			"type": "integer",
+			"default": 0,
+			"title": "The time_next_update_unix Schema",
+			"examples": [
+				1712880941
+			]
+		},
+		"time_next_update_utc": {
+			"type": "string",
+			"default": "",
+			"title": "The time_next_update_utc Schema",
+			"examples": [
+				"Fri, 12 Apr 2024 00:15:41 +0000"
+			]
+		},
+		"time_eol_unix": {
+			"type": "integer",
+			"default": 0,
+			"title": "The time_eol_unix Schema",
+			"examples": [
+				0
+			]
+		},
+		"base_code": {
+			"type": "string",
+			"default": "",
+			"title": "The base_code Schema",
+			"examples": [
+				"USD"
+			]
+		},
+		"rates": {
+			"type": "object",
+			"default": {},
+			"title": "The rates Schema",
+			"required": [
+				"USD",
+				"AED",
+				"AFN",
+				"ALL",
+				"AMD",
+				"ANG",
+				"AOA",
+				"ARS",
+				"AUD",
+				"AWG",
+				"AZN",
+				"BAM",
+				"BBD",
+				"BDT",
+				"BGN",
+				"BHD",
+				"BIF",
+				"BMD",
+				"BND",
+				"BOB",
+				"BRL",
+				"BSD",
+				"BTN",
+				"BWP",
+				"BYN",
+				"BZD",
+				"CAD",
+				"CDF",
+				"CHF",
+				"CLP",
+				"CNY",
+				"COP",
+				"CRC",
+				"CUP",
+				"CVE",
+				"CZK",
+				"DJF",
+				"DKK",
+				"DOP",
+				"DZD",
+				"EGP",
+				"ERN",
+				"ETB",
+				"EUR",
+				"FJD",
+				"FKP",
+				"FOK",
+				"GBP",
+				"GEL",
+				"GGP",
+				"GHS",
+				"GIP",
+				"GMD",
+				"GNF",
+				"GTQ",
+				"GYD",
+				"HKD",
+				"HNL",
+				"HRK",
+				"HTG",
+				"HUF",
+				"IDR",
+				"ILS",
+				"IMP",
+				"INR",
+				"IQD",
+				"IRR",
+				"ISK",
+				"JEP",
+				"JMD",
+				"JOD",
+				"JPY",
+				"KES",
+				"KGS",
+				"KHR",
+				"KID",
+				"KMF",
+				"KRW",
+				"KWD",
+				"KYD",
+				"KZT",
+				"LAK",
+				"LBP",
+				"LKR",
+				"LRD",
+				"LSL",
+				"LYD",
+				"MAD",
+				"MDL",
+				"MGA",
+				"MKD",
+				"MMK",
+				"MNT",
+				"MOP",
+				"MRU",
+				"MUR",
+				"MVR",
+				"MWK",
+				"MXN",
+				"MYR",
+				"MZN",
+				"NAD",
+				"NGN",
+				"NIO",
+				"NOK",
+				"NPR",
+				"NZD",
+				"OMR",
+				"PAB",
+				"PEN",
+				"PGK",
+				"PHP",
+				"PKR",
+				"PLN",
+				"PYG",
+				"QAR",
+				"RON",
+				"RSD",
+				"RUB",
+				"RWF",
+				"SAR",
+				"SBD",
+				"SCR",
+				"SDG",
+				"SEK",
+				"SGD",
+				"SHP",
+				"SLE",
+				"SLL",
+				"SOS",
+				"SRD",
+				"SSP",
+				"STN",
+				"SYP",
+				"SZL",
+				"THB",
+				"TJS",
+				"TMT",
+				"TND",
+				"TOP",
+				"TRY",
+				"TTD",
+				"TVD",
+				"TWD",
+				"TZS",
+				"UAH",
+				"UGX",
+				"UYU",
+				"UZS",
+				"VES",
+				"VND",
+				"VUV",
+				"WST",
+				"XAF",
+				"XCD",
+				"XDR",
+				"XOF",
+				"XPF",
+				"YER",
+				"ZAR",
+				"ZMW",
+				"ZWL"
+			],
+			"properties": {
+				"USD": {
+					"type": "integer",
+					"default": 0,
+					"title": "The USD Schema",
+					"examples": [
+						1
+					]
+				},
+				"AED": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The AED Schema",
+					"examples": [
+						3.6725
+					]
+				},
+				"AFN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The AFN Schema",
+					"examples": [
+						71.192273
+					]
+				},
+				"ALL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ALL Schema",
+					"examples": [
+						93.726767
+					]
+				},
+				"AMD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The AMD Schema",
+					"examples": [
+						389.656953
+					]
+				},
+				"ANG": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ANG Schema",
+					"examples": [
+						1.79
+					]
+				},
+				"AOA": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The AOA Schema",
+					"examples": [
+						843.515815
+					]
+				},
+				"ARS": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ARS Schema",
+					"examples": [
+						864.75
+					]
+				},
+				"AUD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The AUD Schema",
+					"examples": [
+						1.530523
+					]
+				},
+				"AWG": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The AWG Schema",
+					"examples": [
+						1.79
+					]
+				},
+				"AZN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The AZN Schema",
+					"examples": [
+						1.700313
+					]
+				},
+				"BAM": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BAM Schema",
+					"examples": [
+						1.815902
+					]
+				},
+				"BBD": {
+					"type": "integer",
+					"default": 0,
+					"title": "The BBD Schema",
+					"examples": [
+						2
+					]
+				},
+				"BDT": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BDT Schema",
+					"examples": [
+						109.728589
+					]
+				},
+				"BGN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BGN Schema",
+					"examples": [
+						1.814285
+					]
+				},
+				"BHD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BHD Schema",
+					"examples": [
+						0.376
+					]
+				},
+				"BIF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BIF Schema",
+					"examples": [
+						2858.966154
+					]
+				},
+				"BMD": {
+					"type": "integer",
+					"default": 0,
+					"title": "The BMD Schema",
+					"examples": [
+						1
+					]
+				},
+				"BND": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BND Schema",
+					"examples": [
+						1.35136
+					]
+				},
+				"BOB": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BOB Schema",
+					"examples": [
+						6.914273
+					]
+				},
+				"BRL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BRL Schema",
+					"examples": [
+						5.014622
+					]
+				},
+				"BSD": {
+					"type": "integer",
+					"default": 0,
+					"title": "The BSD Schema",
+					"examples": [
+						1
+					]
+				},
+				"BTN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BTN Schema",
+					"examples": [
+						83.327923
+					]
+				},
+				"BWP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BWP Schema",
+					"examples": [
+						13.689861
+					]
+				},
+				"BYN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The BYN Schema",
+					"examples": [
+						3.262971
+					]
+				},
+				"BZD": {
+					"type": "integer",
+					"default": 0,
+					"title": "The BZD Schema",
+					"examples": [
+						2
+					]
+				},
+				"CAD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The CAD Schema",
+					"examples": [
+						1.365059
+					]
+				},
+				"CDF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The CDF Schema",
+					"examples": [
+						2750.9195
+					]
+				},
+				"CHF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The CHF Schema",
+					"examples": [
+						0.910872
+					]
+				},
+				"CLP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The CLP Schema",
+					"examples": [
+						941.965429
+					]
+				},
+				"CNY": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The CNY Schema",
+					"examples": [
+						7.248259
+					]
+				},
+				"COP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The COP Schema",
+					"examples": [
+						3769.553874
+					]
+				},
+				"CRC": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The CRC Schema",
+					"examples": [
+						506.435371
+					]
+				},
+				"CUP": {
+					"type": "integer",
+					"default": 0,
+					"title": "The CUP Schema",
+					"examples": [
+						24
+					]
+				},
+				"CVE": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The CVE Schema",
+					"examples": [
+						102.376198
+					]
+				},
+				"CZK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The CZK Schema",
+					"examples": [
+						23.539514
+					]
+				},
+				"DJF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The DJF Schema",
+					"examples": [
+						177.721
+					]
+				},
+				"DKK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The DKK Schema",
+					"examples": [
+						6.933069
+					]
+				},
+				"DOP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The DOP Schema",
+					"examples": [
+						59.15093
+					]
+				},
+				"DZD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The DZD Schema",
+					"examples": [
+						134.515986
+					]
+				},
+				"EGP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The EGP Schema",
+					"examples": [
+						47.558636
+					]
+				},
+				"ERN": {
+					"type": "integer",
+					"default": 0,
+					"title": "The ERN Schema",
+					"examples": [
+						15
+					]
+				},
+				"ETB": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ETB Schema",
+					"examples": [
+						56.761048
+					]
+				},
+				"EUR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The EUR Schema",
+					"examples": [
+						0.928835
+					]
+				},
+				"FJD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The FJD Schema",
+					"examples": [
+						2.246757
+					]
+				},
+				"FKP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The FKP Schema",
+					"examples": [
+						0.795396
+					]
+				},
+				"FOK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The FOK Schema",
+					"examples": [
+						6.932707
+					]
+				},
+				"GBP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GBP Schema",
+					"examples": [
+						0.795411
+					]
+				},
+				"GEL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GEL Schema",
+					"examples": [
+						2.672369
+					]
+				},
+				"GGP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GGP Schema",
+					"examples": [
+						0.795396
+					]
+				},
+				"GHS": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GHS Schema",
+					"examples": [
+						13.461442
+					]
+				},
+				"GIP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GIP Schema",
+					"examples": [
+						0.795396
+					]
+				},
+				"GMD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GMD Schema",
+					"examples": [
+						66.150899
+					]
+				},
+				"GNF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GNF Schema",
+					"examples": [
+						8587.808845
+					]
+				},
+				"GTQ": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GTQ Schema",
+					"examples": [
+						7.779462
+					]
+				},
+				"GYD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The GYD Schema",
+					"examples": [
+						209.170995
+					]
+				},
+				"HKD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The HKD Schema",
+					"examples": [
+						7.834214
+					]
+				},
+				"HNL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The HNL Schema",
+					"examples": [
+						24.665108
+					]
+				},
+				"HRK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The HRK Schema",
+					"examples": [
+						6.995452
+					]
+				},
+				"HTG": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The HTG Schema",
+					"examples": [
+						132.533508
+					]
+				},
+				"HUF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The HUF Schema",
+					"examples": [
+						362.544105
+					]
+				},
+				"IDR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The IDR Schema",
+					"examples": [
+						15898.021175
+					]
+				},
+				"ILS": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ILS Schema",
+					"examples": [
+						3.740836
+					]
+				},
+				"IMP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The IMP Schema",
+					"examples": [
+						0.795396
+					]
+				},
+				"INR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The INR Schema",
+					"examples": [
+						83.328089
+					]
+				},
+				"IQD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The IQD Schema",
+					"examples": [
+						1308.94473
+					]
+				},
+				"IRR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The IRR Schema",
+					"examples": [
+						41892.557586
+					]
+				},
+				"ISK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ISK Schema",
+					"examples": [
+						138.755491
+					]
+				},
+				"JEP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The JEP Schema",
+					"examples": [
+						0.795396
+					]
+				},
+				"JMD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The JMD Schema",
+					"examples": [
+						154.468242
+					]
+				},
+				"JOD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The JOD Schema",
+					"examples": [
+						0.709
+					]
+				},
+				"JPY": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The JPY Schema",
+					"examples": [
+						152.62068
+					]
+				},
+				"KES": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KES Schema",
+					"examples": [
+						129.967684
+					]
+				},
+				"KGS": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KGS Schema",
+					"examples": [
+						89.310639
+					]
+				},
+				"KHR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KHR Schema",
+					"examples": [
+						4037.829594
+					]
+				},
+				"KID": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KID Schema",
+					"examples": [
+						1.530477
+					]
+				},
+				"KMF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KMF Schema",
+					"examples": [
+						456.770398
+					]
+				},
+				"KRW": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KRW Schema",
+					"examples": [
+						1357.159716
+					]
+				},
+				"KWD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KWD Schema",
+					"examples": [
+						0.307409
+					]
+				},
+				"KYD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KYD Schema",
+					"examples": [
+						0.833333
+					]
+				},
+				"KZT": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The KZT Schema",
+					"examples": [
+						448.221154
+					]
+				},
+				"LAK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The LAK Schema",
+					"examples": [
+						21092.810956
+					]
+				},
+				"LBP": {
+					"type": "integer",
+					"default": 0,
+					"title": "The LBP Schema",
+					"examples": [
+						89500
+					]
+				},
+				"LKR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The LKR Schema",
+					"examples": [
+						298.247375
+					]
+				},
+				"LRD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The LRD Schema",
+					"examples": [
+						193.961857
+					]
+				},
+				"LSL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The LSL Schema",
+					"examples": [
+						18.733862
+					]
+				},
+				"LYD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The LYD Schema",
+					"examples": [
+						4.829294
+					]
+				},
+				"MAD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MAD Schema",
+					"examples": [
+						10.024117
+					]
+				},
+				"MDL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MDL Schema",
+					"examples": [
+						17.630433
+					]
+				},
+				"MGA": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MGA Schema",
+					"examples": [
+						4348.800052
+					]
+				},
+				"MKD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MKD Schema",
+					"examples": [
+						56.592091
+					]
+				},
+				"MMK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MMK Schema",
+					"examples": [
+						2098.253599
+					]
+				},
+				"MNT": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MNT Schema",
+					"examples": [
+						3404.664988
+					]
+				},
+				"MOP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MOP Schema",
+					"examples": [
+						8.06924
+					]
+				},
+				"MRU": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MRU Schema",
+					"examples": [
+						39.681366
+					]
+				},
+				"MUR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MUR Schema",
+					"examples": [
+						46.161865
+					]
+				},
+				"MVR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MVR Schema",
+					"examples": [
+						15.424999
+					]
+				},
+				"MWK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MWK Schema",
+					"examples": [
+						1739.872758
+					]
+				},
+				"MXN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MXN Schema",
+					"examples": [
+						16.467816
+					]
+				},
+				"MYR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MYR Schema",
+					"examples": [
+						4.747495
+					]
+				},
+				"MZN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The MZN Schema",
+					"examples": [
+						64.039124
+					]
+				},
+				"NAD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The NAD Schema",
+					"examples": [
+						18.733862
+					]
+				},
+				"NGN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The NGN Schema",
+					"examples": [
+						1242.080596
+					]
+				},
+				"NIO": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The NIO Schema",
+					"examples": [
+						36.797655
+					]
+				},
+				"NOK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The NOK Schema",
+					"examples": [
+						10.821821
+					]
+				},
+				"NPR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The NPR Schema",
+					"examples": [
+						133.324676
+					]
+				},
+				"NZD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The NZD Schema",
+					"examples": [
+						1.670233
+					]
+				},
+				"OMR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The OMR Schema",
+					"examples": [
+						0.384497
+					]
+				},
+				"PAB": {
+					"type": "integer",
+					"default": 0,
+					"title": "The PAB Schema",
+					"examples": [
+						1
+					]
+				},
+				"PEN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The PEN Schema",
+					"examples": [
+						3.701894
+					]
+				},
+				"PGK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The PGK Schema",
+					"examples": [
+						3.812987
+					]
+				},
+				"PHP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The PHP Schema",
+					"examples": [
+						56.564627
+					]
+				},
+				"PKR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The PKR Schema",
+					"examples": [
+						278.204882
+					]
+				},
+				"PLN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The PLN Schema",
+					"examples": [
+						3.952056
+					]
+				},
+				"PYG": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The PYG Schema",
+					"examples": [
+						7358.322286
+					]
+				},
+				"QAR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The QAR Schema",
+					"examples": [
+						3.64
+					]
+				},
+				"RON": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The RON Schema",
+					"examples": [
+						4.593581
+					]
+				},
+				"RSD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The RSD Schema",
+					"examples": [
+						107.829113
+					]
+				},
+				"RUB": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The RUB Schema",
+					"examples": [
+						93.317684
+					]
+				},
+				"RWF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The RWF Schema",
+					"examples": [
+						1291.977003
+					]
+				},
+				"SAR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SAR Schema",
+					"examples": [
+						3.75
+					]
+				},
+				"SBD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SBD Schema",
+					"examples": [
+						8.506733
+					]
+				},
+				"SCR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SCR Schema",
+					"examples": [
+						13.612602
+					]
+				},
+				"SDG": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SDG Schema",
+					"examples": [
+						585.767055
+					]
+				},
+				"SEK": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SEK Schema",
+					"examples": [
+						10.706448
+					]
+				},
+				"SGD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SGD Schema",
+					"examples": [
+						1.350501
+					]
+				},
+				"SHP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SHP Schema",
+					"examples": [
+						0.795396
+					]
+				},
+				"SLE": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SLE Schema",
+					"examples": [
+						22.592318
+					]
+				},
+				"SLL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SLL Schema",
+					"examples": [
+						22592.318335
+					]
+				},
+				"SOS": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SOS Schema",
+					"examples": [
+						570.907362
+					]
+				},
+				"SRD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SRD Schema",
+					"examples": [
+						34.927951
+					]
+				},
+				"SSP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SSP Schema",
+					"examples": [
+						1557.406278
+					]
+				},
+				"STN": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The STN Schema",
+					"examples": [
+						22.747171
+					]
+				},
+				"SYP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SYP Schema",
+					"examples": [
+						12984.90818
+					]
+				},
+				"SZL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The SZL Schema",
+					"examples": [
+						18.733862
+					]
+				},
+				"THB": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The THB Schema",
+					"examples": [
+						36.599781
+					]
+				},
+				"TJS": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TJS Schema",
+					"examples": [
+						10.941359
+					]
+				},
+				"TMT": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TMT Schema",
+					"examples": [
+						3.496167
+					]
+				},
+				"TND": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TND Schema",
+					"examples": [
+						3.110801
+					]
+				},
+				"TOP": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TOP Schema",
+					"examples": [
+						2.341004
+					]
+				},
+				"TRY": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TRY Schema",
+					"examples": [
+						32.277914
+					]
+				},
+				"TTD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TTD Schema",
+					"examples": [
+						6.773773
+					]
+				},
+				"TVD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TVD Schema",
+					"examples": [
+						1.530477
+					]
+				},
+				"TWD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TWD Schema",
+					"examples": [
+						32.150738
+					]
+				},
+				"TZS": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The TZS Schema",
+					"examples": [
+						2563.641649
+					]
+				},
+				"UAH": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The UAH Schema",
+					"examples": [
+						39.020537
+					]
+				},
+				"UGX": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The UGX Schema",
+					"examples": [
+						3785.462688
+					]
+				},
+				"UYU": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The UYU Schema",
+					"examples": [
+						38.676523
+					]
+				},
+				"UZS": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The UZS Schema",
+					"examples": [
+						12643.494947
+					]
+				},
+				"VES": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The VES Schema",
+					"examples": [
+						36.1883
+					]
+				},
+				"VND": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The VND Schema",
+					"examples": [
+						24952.393623
+					]
+				},
+				"VUV": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The VUV Schema",
+					"examples": [
+						119.968185
+					]
+				},
+				"WST": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The WST Schema",
+					"examples": [
+						2.740081
+					]
+				},
+				"XAF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The XAF Schema",
+					"examples": [
+						609.027197
+					]
+				},
+				"XCD": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The XCD Schema",
+					"examples": [
+						2.7
+					]
+				},
+				"XDR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The XDR Schema",
+					"examples": [
+						0.753664
+					]
+				},
+				"XOF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The XOF Schema",
+					"examples": [
+						609.027197
+					]
+				},
+				"XPF": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The XPF Schema",
+					"examples": [
+						110.794509
+					]
+				},
+				"YER": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The YER Schema",
+					"examples": [
+						250.075133
+					]
+				},
+				"ZAR": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ZAR Schema",
+					"examples": [
+						18.734268
+					]
+				},
+				"ZMW": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ZMW Schema",
+					"examples": [
+						24.730085
+					]
+				},
+				"ZWL": {
+					"type": "number",
+					"default": 0.0,
+					"title": "The ZWL Schema",
+					"examples": [
+						13.5012
+					]
+				}
+			},
+			"examples": [
+				{
+					"USD": 1,
+					"AED": 3.6725,
+					"AFN": 71.192273,
+					"ALL": 93.726767,
+					"AMD": 389.656953,
+					"ANG": 1.79,
+					"AOA": 843.515815,
+					"ARS": 864.75,
+					"AUD": 1.530523,
+					"AWG": 1.79,
+					"AZN": 1.700313,
+					"BAM": 1.815902,
+					"BBD": 2,
+					"BDT": 109.728589,
+					"BGN": 1.814285,
+					"BHD": 0.376,
+					"BIF": 2858.966154,
+					"BMD": 1,
+					"BND": 1.35136,
+					"BOB": 6.914273,
+					"BRL": 5.014622,
+					"BSD": 1,
+					"BTN": 83.327923,
+					"BWP": 13.689861,
+					"BYN": 3.262971,
+					"BZD": 2,
+					"CAD": 1.365059,
+					"CDF": 2750.9195,
+					"CHF": 0.910872,
+					"CLP": 941.965429,
+					"CNY": 7.248259,
+					"COP": 3769.553874,
+					"CRC": 506.435371,
+					"CUP": 24,
+					"CVE": 102.376198,
+					"CZK": 23.539514,
+					"DJF": 177.721,
+					"DKK": 6.933069,
+					"DOP": 59.15093,
+					"DZD": 134.515986,
+					"EGP": 47.558636,
+					"ERN": 15,
+					"ETB": 56.761048,
+					"EUR": 0.928835,
+					"FJD": 2.246757,
+					"FKP": 0.795396,
+					"FOK": 6.932707,
+					"GBP": 0.795411,
+					"GEL": 2.672369,
+					"GGP": 0.795396,
+					"GHS": 13.461442,
+					"GIP": 0.795396,
+					"GMD": 66.150899,
+					"GNF": 8587.808845,
+					"GTQ": 7.779462,
+					"GYD": 209.170995,
+					"HKD": 7.834214,
+					"HNL": 24.665108,
+					"HRK": 6.995452,
+					"HTG": 132.533508,
+					"HUF": 362.544105,
+					"IDR": 15898.021175,
+					"ILS": 3.740836,
+					"IMP": 0.795396,
+					"INR": 83.328089,
+					"IQD": 1308.94473,
+					"IRR": 41892.557586,
+					"ISK": 138.755491,
+					"JEP": 0.795396,
+					"JMD": 154.468242,
+					"JOD": 0.709,
+					"JPY": 152.62068,
+					"KES": 129.967684,
+					"KGS": 89.310639,
+					"KHR": 4037.829594,
+					"KID": 1.530477,
+					"KMF": 456.770398,
+					"KRW": 1357.159716,
+					"KWD": 0.307409,
+					"KYD": 0.833333,
+					"KZT": 448.221154,
+					"LAK": 21092.810956,
+					"LBP": 89500,
+					"LKR": 298.247375,
+					"LRD": 193.961857,
+					"LSL": 18.733862,
+					"LYD": 4.829294,
+					"MAD": 10.024117,
+					"MDL": 17.630433,
+					"MGA": 4348.800052,
+					"MKD": 56.592091,
+					"MMK": 2098.253599,
+					"MNT": 3404.664988,
+					"MOP": 8.06924,
+					"MRU": 39.681366,
+					"MUR": 46.161865,
+					"MVR": 15.424999,
+					"MWK": 1739.872758,
+					"MXN": 16.467816,
+					"MYR": 4.747495,
+					"MZN": 64.039124,
+					"NAD": 18.733862,
+					"NGN": 1242.080596,
+					"NIO": 36.797655,
+					"NOK": 10.821821,
+					"NPR": 133.324676,
+					"NZD": 1.670233,
+					"OMR": 0.384497,
+					"PAB": 1,
+					"PEN": 3.701894,
+					"PGK": 3.812987,
+					"PHP": 56.564627,
+					"PKR": 278.204882,
+					"PLN": 3.952056,
+					"PYG": 7358.322286,
+					"QAR": 3.64,
+					"RON": 4.593581,
+					"RSD": 107.829113,
+					"RUB": 93.317684,
+					"RWF": 1291.977003,
+					"SAR": 3.75,
+					"SBD": 8.506733,
+					"SCR": 13.612602,
+					"SDG": 585.767055,
+					"SEK": 10.706448,
+					"SGD": 1.350501,
+					"SHP": 0.795396,
+					"SLE": 22.592318,
+					"SLL": 22592.318335,
+					"SOS": 570.907362,
+					"SRD": 34.927951,
+					"SSP": 1557.406278,
+					"STN": 22.747171,
+					"SYP": 12984.90818,
+					"SZL": 18.733862,
+					"THB": 36.599781,
+					"TJS": 10.941359,
+					"TMT": 3.496167,
+					"TND": 3.110801,
+					"TOP": 2.341004,
+					"TRY": 32.277914,
+					"TTD": 6.773773,
+					"TVD": 1.530477,
+					"TWD": 32.150738,
+					"TZS": 2563.641649,
+					"UAH": 39.020537,
+					"UGX": 3785.462688,
+					"UYU": 38.676523,
+					"UZS": 12643.494947,
+					"VES": 36.1883,
+					"VND": 24952.393623,
+					"VUV": 119.968185,
+					"WST": 2.740081,
+					"XAF": 609.027197,
+					"XCD": 2.7,
+					"XDR": 0.753664,
+					"XOF": 609.027197,
+					"XPF": 110.794509,
+					"YER": 250.075133,
+					"ZAR": 18.734268,
+					"ZMW": 24.730085,
+					"ZWL": 13.5012
+				}
+			]
+		}
+	},
+	"examples": [
+		{
+			"result": "success",
+			"provider": "https://www.exchangerate-api.com",
+			"documentation": "https://www.exchangerate-api.com/docs/free",
+			"terms_of_use": "https://www.exchangerate-api.com/terms",
+			"time_last_update_unix": 1712793751,
+			"time_last_update_utc": "Thu, 11 Apr 2024 00:02:31 +0000",
+			"time_next_update_unix": 1712880941,
+			"time_next_update_utc": "Fri, 12 Apr 2024 00:15:41 +0000",
+			"time_eol_unix": 0,
+			"base_code": "USD",
+			"rates": {
+				"USD": 1,
+				"AED": 3.6725,
+				"AFN": 71.192273,
+				"ALL": 93.726767,
+				"AMD": 389.656953,
+				"ANG": 1.79,
+				"AOA": 843.515815,
+				"ARS": 864.75,
+				"AUD": 1.530523,
+				"AWG": 1.79,
+				"AZN": 1.700313,
+				"BAM": 1.815902,
+				"BBD": 2,
+				"BDT": 109.728589,
+				"BGN": 1.814285,
+				"BHD": 0.376,
+				"BIF": 2858.966154,
+				"BMD": 1,
+				"BND": 1.35136,
+				"BOB": 6.914273,
+				"BRL": 5.014622,
+				"BSD": 1,
+				"BTN": 83.327923,
+				"BWP": 13.689861,
+				"BYN": 3.262971,
+				"BZD": 2,
+				"CAD": 1.365059,
+				"CDF": 2750.9195,
+				"CHF": 0.910872,
+				"CLP": 941.965429,
+				"CNY": 7.248259,
+				"COP": 3769.553874,
+				"CRC": 506.435371,
+				"CUP": 24,
+				"CVE": 102.376198,
+				"CZK": 23.539514,
+				"DJF": 177.721,
+				"DKK": 6.933069,
+				"DOP": 59.15093,
+				"DZD": 134.515986,
+				"EGP": 47.558636,
+				"ERN": 15,
+				"ETB": 56.761048,
+				"EUR": 0.928835,
+				"FJD": 2.246757,
+				"FKP": 0.795396,
+				"FOK": 6.932707,
+				"GBP": 0.795411,
+				"GEL": 2.672369,
+				"GGP": 0.795396,
+				"GHS": 13.461442,
+				"GIP": 0.795396,
+				"GMD": 66.150899,
+				"GNF": 8587.808845,
+				"GTQ": 7.779462,
+				"GYD": 209.170995,
+				"HKD": 7.834214,
+				"HNL": 24.665108,
+				"HRK": 6.995452,
+				"HTG": 132.533508,
+				"HUF": 362.544105,
+				"IDR": 15898.021175,
+				"ILS": 3.740836,
+				"IMP": 0.795396,
+				"INR": 83.328089,
+				"IQD": 1308.94473,
+				"IRR": 41892.557586,
+				"ISK": 138.755491,
+				"JEP": 0.795396,
+				"JMD": 154.468242,
+				"JOD": 0.709,
+				"JPY": 152.62068,
+				"KES": 129.967684,
+				"KGS": 89.310639,
+				"KHR": 4037.829594,
+				"KID": 1.530477,
+				"KMF": 456.770398,
+				"KRW": 1357.159716,
+				"KWD": 0.307409,
+				"KYD": 0.833333,
+				"KZT": 448.221154,
+				"LAK": 21092.810956,
+				"LBP": 89500,
+				"LKR": 298.247375,
+				"LRD": 193.961857,
+				"LSL": 18.733862,
+				"LYD": 4.829294,
+				"MAD": 10.024117,
+				"MDL": 17.630433,
+				"MGA": 4348.800052,
+				"MKD": 56.592091,
+				"MMK": 2098.253599,
+				"MNT": 3404.664988,
+				"MOP": 8.06924,
+				"MRU": 39.681366,
+				"MUR": 46.161865,
+				"MVR": 15.424999,
+				"MWK": 1739.872758,
+				"MXN": 16.467816,
+				"MYR": 4.747495,
+				"MZN": 64.039124,
+				"NAD": 18.733862,
+				"NGN": 1242.080596,
+				"NIO": 36.797655,
+				"NOK": 10.821821,
+				"NPR": 133.324676,
+				"NZD": 1.670233,
+				"OMR": 0.384497,
+				"PAB": 1,
+				"PEN": 3.701894,
+				"PGK": 3.812987,
+				"PHP": 56.564627,
+				"PKR": 278.204882,
+				"PLN": 3.952056,
+				"PYG": 7358.322286,
+				"QAR": 3.64,
+				"RON": 4.593581,
+				"RSD": 107.829113,
+				"RUB": 93.317684,
+				"RWF": 1291.977003,
+				"SAR": 3.75,
+				"SBD": 8.506733,
+				"SCR": 13.612602,
+				"SDG": 585.767055,
+				"SEK": 10.706448,
+				"SGD": 1.350501,
+				"SHP": 0.795396,
+				"SLE": 22.592318,
+				"SLL": 22592.318335,
+				"SOS": 570.907362,
+				"SRD": 34.927951,
+				"SSP": 1557.406278,
+				"STN": 22.747171,
+				"SYP": 12984.90818,
+				"SZL": 18.733862,
+				"THB": 36.599781,
+				"TJS": 10.941359,
+				"TMT": 3.496167,
+				"TND": 3.110801,
+				"TOP": 2.341004,
+				"TRY": 32.277914,
+				"TTD": 6.773773,
+				"TVD": 1.530477,
+				"TWD": 32.150738,
+				"TZS": 2563.641649,
+				"UAH": 39.020537,
+				"UGX": 3785.462688,
+				"UYU": 38.676523,
+				"UZS": 12643.494947,
+				"VES": 36.1883,
+				"VND": 24952.393623,
+				"VUV": 119.968185,
+				"WST": 2.740081,
+				"XAF": 609.027197,
+				"XCD": 2.7,
+				"XDR": 0.753664,
+				"XOF": 609.027197,
+				"XPF": 110.794509,
+				"YER": 250.075133,
+				"ZAR": 18.734268,
+				"ZMW": 24.730085,
+				"ZWL": 13.5012
+			}
+		}
+	]
+}

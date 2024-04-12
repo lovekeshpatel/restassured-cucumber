@@ -1,0 +1,4 @@
+com\sdet\utils\ResponseHandler.class
+com\sdet\stepdefinition\MultiCurrencyConversionStepDefinition.class
+com\sdet\stepdefinition\Hooks.class
+com\sdet\utils\TestContext.class
